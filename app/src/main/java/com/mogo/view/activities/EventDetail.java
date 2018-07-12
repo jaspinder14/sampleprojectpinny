@@ -232,6 +232,7 @@ public class EventDetail extends AppCompatActivity {
         tvTypeEvent.setText(eventType);
         tvLocationEvent.setSelected(true);
         tvLocationEvent.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+
         tvLocationEvent.setSingleLine(true);
         tvLocationEvent.setText(location);
         tvCharityTg.setText(charityPurposeTag);
