@@ -225,8 +225,6 @@ public class EventDetail extends AppCompatActivity {
         } else if (frequency.equalsIgnoreCase("4")) {
             tvFrequency.setText("Event will repeat same day next Year");
         }
-
-
         tvTopName.setText(eventName);
         startTimeTV.setText(time);
         tvDescription.setText(thingsDescription);
