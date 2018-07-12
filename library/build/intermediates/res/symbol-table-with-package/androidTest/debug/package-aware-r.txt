@@ -1,0 +1,9 @@
+kankan.wheel.test
+int color wheel_item_divider 0x7f010000
+int color wheel_item_text 0x7f010001
+int drawable item_line 0x7f020000
+int drawable wheel_bg 0x7f020001
+int drawable wheel_val 0x7f020002
+int id text 0x7f030000
+int layout v4_view_wheel_day 0x7f040000
+int string wheel_date_font 0x7f050000

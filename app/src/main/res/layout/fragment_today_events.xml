@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.mogo.view.fragments.TodayEventsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/searchLayoutRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/searchIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/search_icon" />
+
+        <com.mogo.view.customcontrols.EditTextRegular
+            android:id="@+id/searchET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/searchIV"
+            android:background="@null"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <com.mogo.view.customcontrols.TextViewRegular
+        android:id="@+id/todayeventTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchLayoutRL"
+        android:padding="10dp"
+        android:text="@string/todayevent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/todayEventsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/todayeventTV"
+        android:padding="10dp" />
+
+</RelativeLayout>

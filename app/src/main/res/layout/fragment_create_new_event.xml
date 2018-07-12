@@ -1,0 +1,444 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.mogo.view.fragments.CreateNewEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/createEventBT">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/eventIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/createeventimg"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/addImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="15dp"
+                    android:src="@drawable/camera" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/name" />
+
+                <com.mogo.view.customcontrols.EditTextRegular
+                    android:id="@+id/etEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:hint="Event Name"
+                    android:imeOptions="actionDone"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dateevent" />
+
+                    <com.mogo.view.customcontrols.TextViewRegular
+                        android:id="@+id/dateEventTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/righcurvedrectangle"
+                        android:hint="Start Date"
+                        android:padding="10dp"
+                        android:textColor="#636367"
+                        android:textColorHint="#636367"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.mogo.view.customcontrols.TextViewRegular
+                        android:id="@+id/enddateEventTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/righcurvedrectangle"
+                        android:hint="End Date"
+                        android:padding="10dp"
+                        android:textColor="#636367"
+                        android:textColorHint="#636367"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/eventtime" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.mogo.view.customcontrols.TextViewRegular
+                        android:id="@+id/startTimeTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/righcurvedrectangle"
+                        android:drawableEnd="@drawable/drop"
+                        android:hint="Start Time"
+                        android:padding="10dp"
+                        android:textColor="#636367"
+                        android:textColorHint="#636367"
+                        android:textSize="18sp" />
+
+                    <com.mogo.view.customcontrols.TextViewRegular
+                        android:id="@+id/endTimeTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/righcurvedrectangle"
+                        android:drawableEnd="@drawable/drop"
+                        android:hint="End Time"
+                        android:padding="10dp"
+                        android:textColor="#636367"
+                        android:textColorHint="#636367"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/frequency" />
+
+                <com.mogo.view.customcontrols.TextViewRegular
+                    android:id="@+id/tvFrequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:drawableEnd="@drawable/drop"
+                    android:hint="Frequency"
+                    android:padding="10dp"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/charity" />
+
+                <com.mogo.view.customcontrols.EditTextRegular
+                    android:id="@+id/etCharityUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:hint="Charity URL"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/locationevent" />
+
+                <com.mogo.view.customcontrols.TextViewRegular
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:hint="Location of Event"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/type" />
+
+                <com.mogo.view.customcontrols.TextViewRegular
+                    android:id="@+id/tvTypeEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:hint="Type of Event"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/yelp" />
+
+                <com.mogo.view.customcontrols.EditTextRegular
+                    android:id="@+id/yelpUrlET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:hint="Yelp URL"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fb" />
+
+                <com.mogo.view.customcontrols.EditTextRegular
+                    android:id="@+id/facebookEventPageUrlET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:hint="Facebook Event Page"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/benefaciry" />
+
+                <com.mogo.view.customcontrols.EditTextRegular
+                    android:id="@+id/etbenificiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:hint="Beneficiary/Charity"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tag" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <com.mogo.view.customcontrols.EditTextRegular
+                        android:id="@+id/tvCharityTag"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/righcurvedrectangle"
+                        android:gravity="start"
+                        android:hint="Select the Charity Tags"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textColor="#636367"
+                        android:textColorHint="#636367" />
+
+                    <!--  <com.cunoraz.tagview.TagView xmlns:tagview="http://schemas.android.com/apk/res-auto"
+                          android:id="@+id/tag_group"
+                          android:layout_width="match_parent"
+                          android:layout_height="90dp"
+                          android:layout_margin="10dp"
+                          tagview:lineMargin="5dp"
+                          tagview:tagMargin="5dp"
+                          tagview:textPaddingBottom="5dp"
+                          tagview:textPaddingLeft="8dp"
+                          tagview:textPaddingRight="8dp"
+                          tagview:textPaddingTop="5dp" />-->
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/thing" />
+
+                <com.mogo.view.customcontrols.EditTextRegular
+                    android:id="@+id/briefDescriptionET"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/righcurvedrectangle"
+                    android:gravity="start"
+                    android:hint="Brief Description"
+                    android:padding="8dp"
+                    android:textColor="#636367"
+                    android:textColorHint="#636367" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/createEventBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombar"
+        android:text="@string/create_event"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

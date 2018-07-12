@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.mogo.view.fragments.TermsConditions">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/righcurvedrectangle"
+        android:visibility="visible">
+
+        <com.mogo.view.customcontrols.TextViewRegular
+            android:id="@+id/privacyPolicyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:paddingBottom="50dp"
+            android:text="This privacy policy governs your use of the software application SoShiFy for mobile devices that was created by SoShiFy. The application uses GPS coordinates and past preferences to recommend great new events for you that raise money for charities and all around great causes! SoShiFy obtains the information you provide when you download and register SoShiFy. Registration with us is optional. However, please keep in mind that you may not be able to use some of the features offered by the application unless you register with us.  When you register with us and use SoShiFy, you generally provide: 
+\n\n(a) your name, email address, age, user name, password and other registration information.
+\n\n(b) information you provide us when you contact us for help.
+\n\n(c) information you enter into our system when using the application, such as contact information and project management information.  We may contact you from time to time via notifications of new events in your area.
+\n\nIn addition, the Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile devices unique device ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browsers you use, and information about the way you use the Application.   When you visit the mobile application, we may use GPS technology (or other similar technology) to determine your current location in order to determine the city you are located within and display a location map with relevant advertisements. We will not share your current location with other users or partners.  SoShiFy's only mission is to provide you with great events for great causes, and we will stick to that mission and that mission only."
+            android:textColor="@color/privacyPolicyColor"
+            android:textSize="18sp" />
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.mogo.view.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/mapLayoutRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/searchLayoutRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/searchIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/search_icon" />
+
+            <com.mogo.view.customcontrols.EditTextRegular
+                android:id="@+id/searchET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/searchIV"
+                android:background="@null"
+                android:hint="@string/search_home"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchLayoutRL" />
+
+        <LinearLayout
+            android:id="@+id/tofromLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchLayoutRL"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <Button
+                android:id="@+id/matchingEventsBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottombar"
+                android:text="@string/tap_here_to_see_all_matching_events"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/parent_add">
+
+                <com.mogo.view.customcontrols.TextViewRegular
+                    android:id="@+id/fromTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/dropdownIV"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/from"
+                    android:textColor="#008138"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/dropdownIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/dropdown_pink" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/parent_add">
+
+
+                <com.mogo.view.customcontrols.TextViewRegular
+                    android:id="@+id/toTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/dropdownIV2"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/to"
+                    android:textColor="#008138"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/dropdownIV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/dropdown_pink" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/refreshIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tofromLL"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/refresh_icon" />
+
+        <!-- <ImageView
+             android:id="@+id/filterSearchIV"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentEnd="true"
+             android:padding="10dp"
+             android:src="@drawable/filter_icon" />-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

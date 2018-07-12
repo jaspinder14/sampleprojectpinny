@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "228720815886",
+    "firebase_url": "https://mogo-8791a.firebaseio.com",
+    "project_id": "mogo-8791a",
+    "storage_bucket": "mogo-8791a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228720815886:android:3c36b0c881ba7dfa",
+        "android_client_info": {
+          "package_name": "com.mogo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228720815886-i5i3auil466kcbd10m0agt9bjhtdk681.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mogo",
+            "certificate_hash": "6bab302a1df1350a45ecea80989d76d2f6201867"
+          }
+        },
+        {
+          "client_id": "228720815886-dodslnqnd8t4q1336oobfds9pb6q8e5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmxv1GikNl9ohZEAEWHBN7RgmMP73sw2I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228720815886-dodslnqnd8t4q1336oobfds9pb6q8e5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

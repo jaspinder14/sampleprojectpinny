@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="forgotPasswordSize">25sp</dimen>
+    <dimen name="pleaseEnterSize">20sp</dimen>
+
+
+</resources>

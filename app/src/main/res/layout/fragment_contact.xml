@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.mogo.view.fragments.Contact_Fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mogo.view.customcontrols.EditTextRegular
+            android:id="@+id/userNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Raman Kumar"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <com.mogo.view.customcontrols.EditTextRegular
+            android:id="@+id/emailAddressTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="Raman Kumar"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <com.mogo.view.customcontrols.EditTextRegular
+            android:id="@+id/addCommentET"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="15dp"
+            android:gravity="start"
+            android:hint="Add Comment"
+
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/createEventBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/bottombar"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

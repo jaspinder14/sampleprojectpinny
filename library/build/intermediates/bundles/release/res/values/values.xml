@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wheel_item_divider">#636367</color>
+    <color name="wheel_item_text">@android:color/black</color>
+    <string name="wheel_date_font">overwrite font name!</string>
+</resources>
